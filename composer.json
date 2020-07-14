@@ -1,0 +1,13 @@
+{
+    "name": "atha/codeigniter4-app",
+    "description": "Just a simple codeigniter4 app",
+    "keywords": ["php", "ci", "codeigniter", "codeigniter4"],
+    "license": "None",
+    "authors": [
+        {
+            "name": "Atha Tsaqif",
+            "email": "atha.3417@gmail.com",
+            "homepage": "http://example.com/"
+        }
+    ]
+}
