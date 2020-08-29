@@ -1,0 +1,40 @@
+CRITICAL - 2020-08-02 08:08:12 --> Unable to connect to the database.
+#0 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\coding\xampp\htdocs\codeigniter4-app\app\Models\KomikModel.php(16): CodeIgniter\Model->findAll()
+#4 E:\coding\xampp\htdocs\codeigniter4-app\app\Controllers\Komik.php(21): App\Models\KomikModel->getKomik()
+#5 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->index()
+#6 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#7 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\coding\xampp\htdocs\codeigniter4-app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('E:\\coding\\xampp...')
+#10 {main}
+CRITICAL - 2020-08-02 08:09:10 --> Unable to connect to the database.
+#0 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\coding\xampp\htdocs\codeigniter4-app\app\Models\KomikModel.php(16): CodeIgniter\Model->findAll()
+#4 E:\coding\xampp\htdocs\codeigniter4-app\app\Controllers\Komik.php(21): App\Models\KomikModel->getKomik()
+#5 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->index()
+#6 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#7 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\coding\xampp\htdocs\codeigniter4-app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('E:\\coding\\xampp...')
+#10 {main}
+CRITICAL - 2020-08-02 21:38:54 --> Undefined property: CodeIgniter\HTTP\Files\UploadedFile::$getError
+#0 E:\coding\xampp\htdocs\codeigniter4-app\app\Controllers\Komik.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\coding\\xampp...', 84, Array)
+#1 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->save()
+#2 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#3 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\coding\xampp\htdocs\codeigniter4-app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('E:\\coding\\xampp...')
+#6 {main}
+CRITICAL - 2020-08-02 21:39:26 --> Undefined property: CodeIgniter\HTTP\Files\UploadedFile::$getError
+#0 E:\coding\xampp\htdocs\codeigniter4-app\app\Controllers\Komik.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\coding\\xampp...', 84, Array)
+#1 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->save()
+#2 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#3 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\coding\xampp\htdocs\codeigniter4-app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 E:\coding\xampp\htdocs\codeigniter4-app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('E:\\coding\\xampp...')
+#6 {main}
