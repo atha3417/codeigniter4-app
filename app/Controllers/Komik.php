@@ -15,19 +15,23 @@ class Komik extends BaseController
 	}
 
 	public function index()
-	{
+	{	
+		$uriSegment = new \CodeIgniter\HTTP\URI(env("APP.BASEURL")."/komik");
 		$data = [
 			'title' => "Daftar Komik | WebProgrammingUNPAS",
+			'uriSegment' => $uriSegment,
 			'komik' => $this->komikModel->getKomik()
 		];
 		return view('komik/index', $data);
 	}
 
 	public function detail($slug)
-	{
+	{	
+		$uriSegment = new \CodeIgniter\HTTP\URI(env("APP.BASEURL")."/komik/detail");
 		$komik = $this->komikModel->getKomik($slug);
 		$data = [
 			'title' => "Detail Komik | WebProgrammingUNPAS",
+			'uriSegment' => $uriSegment,
 			'komik' => $komik
 		];
 		if (empty($data['komik'])) {
@@ -37,9 +41,11 @@ class Komik extends BaseController
 	}
 
 	public function create()
-	{
+	{	
+		$uriSegment = new \CodeIgniter\HTTP\URI(env("APP.BASEURL")."/komik/create");
 		$data = [
 			'title' => "Form Tambah Data Komik | WebProgrammingUNPAS",
+			'uriSegment' => $uriSegment,
 			'error' => \Config\Services::validation()
 		];
 		return view('komik/create', $data);
@@ -81,7 +87,8 @@ class Komik extends BaseController
 		}
 
 		$fileSampul = $this->request->getFile('sampul');
-		if ($fileSampul->getError == 4) {
+		// dd($fileSampul);
+		if ($fileSampul->getError() == 4) {
 			$namaSampul = 'default.jpg';
 		} else {
 			$namaSampul = $fileSampul->getRandomName();
@@ -118,6 +125,7 @@ class Komik extends BaseController
 	{
 		$data = [
 			'title' => "Form Ubah Data Komik | WebProgrammingUNPAS",
+			'uriSegment' => $uriSegment,
 			'error' => \Config\Services::validation(),
 			'komik' => $this->komikModel->getKomik($slug)
 		];
@@ -166,7 +174,7 @@ class Komik extends BaseController
 		}
 
 		$fileSampul = $this->request->getFile('sampul');
-		if ($fileSampul->getError == 4) {
+		if ($fileSampul->getError() == 4) {
 			$namaSampul = $this->request->getVar('sampulLama');
 		} else {
 			$namaSampul = $fileSampul->getRandomName();

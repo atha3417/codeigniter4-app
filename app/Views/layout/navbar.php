@@ -6,10 +6,10 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="/">Home</a>
-				<a class="nav-item nav-link" href="/pages/about">About</a>
-				<a class="nav-item nav-link" href="/pages/contact">Contact</a>
-				<a class="nav-item nav-link" href="/komik">Komik</a>
+				<a class="nav-item nav-link <?= $uriSegment->getSegment(1) == 'home' ? 'active' : ''; ?>" href="/">Home</a>
+				<a class="nav-item nav-link <?= $uriSegment->getSegment(2) == 'about' ? 'active' : ''; ?>" href="/pages/about">About</a>
+				<a class="nav-item nav-link <?= $uriSegment->getSegment(2) == 'contact' ? 'active' : ''; ?>" href="/pages/contact">Contact</a>
+				<a class="nav-item nav-link <?= $uriSegment->getSegment(1) == 'komik' ? 'active' : ''; ?>" href="/komik">Komik</a>
 			</div>
 		</div>
 	</div>

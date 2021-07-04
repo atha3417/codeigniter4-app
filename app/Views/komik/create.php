@@ -35,9 +35,10 @@
 						</div>
 						<div class="col-sm-8">
 							<div class="custom-file">
-							  	<input type="file" class="custom-file-input form-control <?= $error->hasError('sampul') ? "is-invalid" : null; ?>" id="sampul" name="sampul" onchange="previewImg()">
+								<input type="file" class="custom-file-input form-control <?= $error->hasError('sampul') ? "is-invalid" : null; ?>" id="sampul" name="sampul" onchange="previewImg()">
+								
 								<div class="invalid-feedback"><?= $error->getError('sampul'); ?></div>
-							  	<label class="custom-file-label" for="sampul">Pilih gambar</label>
+								<label class="custom-file-label" for="sampul">Pilih gambar</label>
 							</div>
 						</div>
 					</div>

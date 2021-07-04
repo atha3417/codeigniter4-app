@@ -6,24 +6,30 @@ class Pages extends BaseController
 {
 	public function index()
 	{
+		$uriSegment = new \CodeIgniter\HTTP\URI(env("APP.BASEURL")."/home");
 		$data = [
-			'title' => "Home | WebProgrammingUNPAS"
+			'title' => "Home | WebProgrammingUNPAS",
+			'uriSegment' => $uriSegment
 		];
 		return view('pages/home', $data);
 	}
-
+	
 	public function about()
 	{
+		$uriSegment = new \CodeIgniter\HTTP\URI(env("APP.BASEURL")."/pages/about");
 		$data = [
-			'title' => "About me | WebProgrammingUNPAS"
+			'title' => "About me | WebProgrammingUNPAS",
+			'uriSegment' => $uriSegment
 		];
 		return view('pages/about', $data);
 	}
-
+	
 	public function contact()
 	{
+		$uriSegment = new \CodeIgniter\HTTP\URI(env("APP.BASEURL")."/pages/contact");
 		$data = [
 			'title' => "Contact Us | WebProgrammingUNPAS",
+			'uriSegment' => $uriSegment,
 			'alamat' => [
 				[
 					'tipe' => "rumah",
